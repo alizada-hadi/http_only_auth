@@ -4,7 +4,7 @@ from . import views
 
 
 urlpatterns = [
-    path("api/token/", TokenObtainPairView.as_view()), 
+    path("api/token/", views.MyTokenObtainPairView.as_view()), 
     path("api/token/refresh/", TokenRefreshView.as_view()), 
     path("api/token/verify/", TokenVerifyView.as_view()), 
     path("register/", views.register), 
